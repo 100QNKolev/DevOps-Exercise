@@ -4,6 +4,6 @@ test('Check header', async ({ page }) => {
     await page.goto('https://shadoowkrit-exam.onrender.com'); 
     const homeLink = await page.$('a[href="/"]');
     const text = await homeLink.textContent();
-    expect(text).toBe('My Shopping List for Tomorrow');
+    expect(text).toBe('Home');
   });
   

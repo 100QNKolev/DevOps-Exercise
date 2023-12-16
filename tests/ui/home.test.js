@@ -4,6 +4,6 @@ test('Check home page', async ({ page }) => {
     await page.goto('https://shadoowkrit-exam.onrender.com');
     const heading = await page.$('h1');
     const text = await heading.textContent();
-    expect(text).toContain('My shopping list');  
+    expect(text).toContain('My Shopping List');  
   });
   
